@@ -7,7 +7,13 @@
 
 class RiverBankFactory: public LegionFactory
 {
-
+     public: //
+        Infantry* createInfantry()override;
+        Cavalry* createCavalry() override;
+        Artillery* createArtillery()override;
+    
+        void delpoyArtillery();
+       
 };
 
 

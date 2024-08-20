@@ -10,7 +10,7 @@
 
 class Infantry : public LegionUnit 
 {
-
+   
 };
 
 
