@@ -5,10 +5,16 @@
 #include "RiverBank.h"
 #include "OpenField.h"
 #include "WoodLand.h"
+#include "UnitComponent.h"
 
-class Calvary : public LegionUnit 
-{
+class Calvary : public LegionUnit ,UnitComponent
+{   
 
+     //functions to override from UnitComponent
+    public:
+    void move() override;
+    void fight() override;
+   
 };
 
 

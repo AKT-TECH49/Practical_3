@@ -5,9 +5,21 @@
 #include "WoodLand.h"
 #include "RiverBank.h"
 #include "LegionUnit.h"
+#include "UnitComponent.h"
 
-class Artillery : public LegionUnit
-{
+class Artillery : public LegionUnit ,UnitComponent
+{   
+
+
+
+
+
+
+     //functions to override from UnitComponent
+    public:
+    void move() override;
+    void fight() override;
+    
 };
 
 #endif
