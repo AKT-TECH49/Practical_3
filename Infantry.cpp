@@ -1,6 +1,9 @@
 #include "Infantry.h"
 #include "LegionUnit.h"
 
+#include <iostream>
+using namespace std;
+
 Infantry::Infantry(int health, int defense, int power, std::string formation) : LegionUnit(health, defense)
 {
     this->power = power;
