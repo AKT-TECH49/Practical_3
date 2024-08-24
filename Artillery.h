@@ -3,11 +3,13 @@
 
 #include <string>
 #include "LegionUnit.h"
+#include "UnitComponent.h"
 
-class Artillery : public LegionUnit
-{
+class Artillery : public LegionUnit ,UnitComponent
+{   
 
-    private:
+
+ private:
        int power;
        std::string ammunitionType;
 
@@ -19,5 +21,12 @@ class Artillery : public LegionUnit
        void retreat();
        void loadAmmunition(std::string ammunitionType);
        std::string getType() const;
+
+     //functions to override from UnitComponent
+    
+    void move() override;
+    void fight() override;
+    
 };
+
 #endif
