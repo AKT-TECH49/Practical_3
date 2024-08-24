@@ -1,10 +1,12 @@
-#ifndef RIVERBANKFACTORY_H
-#define RIVERBANKFACTORY_H
+#ifndef WOODLANDFACTORY_H
+#define WOODLANDFACTORY_H
 
 
 #include "LegionFactory.h"
 
-class RiverBankFactory: public LegionFactory
+
+
+class WoodlandFactory: public LegionFactory
 {
      public: //
         Infantry* createInfantry()override;
@@ -14,7 +16,5 @@ class RiverBankFactory: public LegionFactory
         void delpoyArtillery();
        
 };
-
-
 
 #endif

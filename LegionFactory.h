@@ -1,5 +1,5 @@
-#ifndef lEGIONFACTORY_H
-#define lEGIONFACTORY_H
+#ifndef LEGIONFACTORY_H
+#define LEGIONFACTORY_H
 
 
 #include "Cavalry.h"
