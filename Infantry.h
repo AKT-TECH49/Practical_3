@@ -11,6 +11,7 @@ class Infantry : public LegionUnit, public UnitComponent
       int power;
       std::string formation;
    public:
+   Infantry();
     Infantry(int health, int defnse, int power, std::string ammunition);
        void move()override;
        void attack()override;
@@ -18,6 +19,7 @@ class Infantry : public LegionUnit, public UnitComponent
        void retreat();
        void changeFormation(std::string& newformation);
        std::string getType() const;
+       int getPower();
     // functions to override from UnitComponent
 
     void move() override;

@@ -14,6 +14,7 @@ class Artillery : public LegionUnit ,UnitComponent
        std::string ammunitionType;
 
     public:
+    Artillery();
     Artillery(int health, int defnse, int power, std::string ammunition);
        void move()override;
        void attack()override;
@@ -21,6 +22,7 @@ class Artillery : public LegionUnit ,UnitComponent
        void retreat();
        void loadAmmunition(std::string ammunitionType);
        std::string getType() const;
+       int getPower();
 
      //functions to override from UnitComponent
     

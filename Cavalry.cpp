@@ -44,3 +44,8 @@ std::string Cavalry::getType() const
 {
      return "Cavalry";
 }
+
+int Cavalry::getPower()
+{
+     return power;
+}

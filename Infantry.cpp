@@ -48,3 +48,8 @@ void Infantry::retreat()
      LegionUnit::retreat();
     std::cout << "Infantry raises shields in " << formation << " formation, further boosting defense." << std::endl;
 }
+
+int Infantry::getPower()
+{
+    return power;
+}

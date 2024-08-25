@@ -20,5 +20,6 @@ class Cavalry : public LegionUnit
        void defend();
        void retreat();
       std::string getType() const;
+      int getPower();
 };
 #endif

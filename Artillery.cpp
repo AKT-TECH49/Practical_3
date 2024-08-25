@@ -53,3 +53,8 @@ std::string Artillery:: getType() const
 {
    return "Artillery";
 }
+
+int Artillery::getPower()
+{
+    return power;
+}
